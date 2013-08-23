@@ -35,12 +35,14 @@ public class ClientProxyJupiter extends CommonProxyJupiter implements IGalacticr
 	
 	public static ClientProxyIo moonClientIo = new ClientProxyIo();
 	public static ClientProxyEuropa moonClientEuropa = new ClientProxyEuropa();
+	public static ClientProxyCallisto moonClientCallisto = new ClientProxyCallisto();
 	
 	@Override
 	public void preInit(FMLPreInitializationEvent event) 
 	{
 		moonClientIo.preInit(event);
 		moonClientEuropa.preInit(event);
+		moonClientCallisto.preInit(event);
 		ClientProxyJupiter.lang = new GCCoreLocalization("micdoodle8/mods/galacticraft/jupiter/client");
 	}
 
@@ -49,6 +51,7 @@ public class ClientProxyJupiter extends CommonProxyJupiter implements IGalacticr
 	{
 		moonClientIo.init(event);
 		moonClientEuropa.init(event);
+		moonClientCallisto.init(event);
 		GalacticraftCore.registerClientSubMod(this);
 	}
 
@@ -57,6 +60,7 @@ public class ClientProxyJupiter extends CommonProxyJupiter implements IGalacticr
 	{
 		moonClientIo.postInit(event);
 		moonClientEuropa.postInit(event);
+	        moonClientCallisto.postInit(event);
 	}
 	
 	@Override
