@@ -23,7 +23,6 @@ import micdoodle8.mods.galacticraft.core.client.fx.GCCoreEntityLaunchFlameFX;
 import micdoodle8.mods.galacticraft.core.client.fx.GCCoreEntityLaunchSmokeFX;
 import micdoodle8.mods.galacticraft.core.client.fx.GCCoreEntityOxygenFX;
 import micdoodle8.mods.galacticraft.core.client.gui.GCCoreGuiChoosePlanet;
-import micdoodle8.mods.galacticraft.core.client.model.GCCoreModelPlayer;
 import micdoodle8.mods.galacticraft.core.client.render.block.GCCoreBlockRendererBreathableAir;
 import micdoodle8.mods.galacticraft.core.client.render.block.GCCoreBlockRendererMeteor;
 import micdoodle8.mods.galacticraft.core.client.render.block.GCCoreBlockRendererOxygenPipe;
@@ -82,7 +81,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.INetworkManager;
 import net.minecraft.network.packet.Packet250CustomPayload;
-import net.minecraft.src.ModelPlayerAPI;
 import net.minecraft.stats.StatBase;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.MovingObjectPosition;
@@ -136,8 +134,6 @@ public class ClientProxyCore extends CommonProxyCore
 	public void preInit(FMLPreInitializationEvent event) 
 	{
 		moon.preInit(event);
-		
-		ModelPlayerAPI.register("GalacticraftCore", GCCoreModelPlayer.class);
 		
 		MinecraftForge.EVENT_BUS.register(new GCCoreSounds());
 		getFirstBootTime = System.currentTimeMillis();
