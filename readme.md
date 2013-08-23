@@ -1,12 +1,7 @@
-
 Galacticraft 
 ============ 
  
-An advanced space exploration mod for Minecraft 1.4.7
- 
-Galacticraft-PreRelease 
-============ 
-All credit goes to micdoodle8 for making this mod. The full compiled version can be found at Http://axiz.weebly.com 
+An advanced space exploration mod for Minecraft 1.4.7, All credit goes to micdoodle8 for making this mod. The full compiled version can be found at Http://axiz.weebly.com 
  
 Compile 
 ============ 
